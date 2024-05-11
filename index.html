@@ -100,6 +100,8 @@ body {
     width: 80%;
     height: 14%;
     background-color: #EEEFF0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Fade in transition */
 }
 
 .words.line1 {
@@ -118,6 +120,10 @@ body {
 
 .words.line4 {
     top: 70%;
+}
+
+.open .words {
+    opacity: 1; /* Fade in when envelope is open */
 }
 
 .open .flap {
@@ -268,9 +274,9 @@ body {
         <div class="front flap"></div>
         <div class="front pocket"></div>
         <div class="letter">
-            <div class="words line1"></div>
-            <div class="words line2"></div>
-            <div class="words line3"></div>
+            <div class="words line1">Mom,</div>
+            <div class="words line2">Happy Mother's Day! Thank</div>
+            <div class="words line3">you for always taking care of me <3</div>
             <div class="words line4"></div>
         </div>
         <div class="hearts">
